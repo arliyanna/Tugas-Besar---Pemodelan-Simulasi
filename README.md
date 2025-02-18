@@ -6,13 +6,13 @@
 
 **2. Description of Simulation Program Methods and Algorithms**
    
-  **A. Road Section Location Selection
-**
+  **A. Road Section Location Selection**
    -  Use the osmnx library to select unique road section locations.
    -  Apply periodic boundary condition to keep the number of cars constant.
    -  Discretize/partition the vehicle path map into M subintervals.
 
   **B.  System Simplification with Discrete Models**
+  
     -  Using a discrete model of position x and time t.
     -  Simplify the behavior of the rider according to predefined rules.
       a.  Simplification Rule-1: Adding 1 unit of speed for each car per time unit           with a maximum speed limit (vmax).
@@ -23,16 +23,17 @@
           speed unit.
       -  Update the speed and position of the vehicle according to the equation
         that has been determined.
-
-  **  C.  Simulation System**
+        
+     **C.  Simulation System**
     
-    -  Using fixed parameters: M = 100, p = 0.3, v0 = 0, d = 2, N = 20, tmax =             1000, vmax = 5.
+    -  Using fixed parameters: M = 100, p = 0.3, v0 = 0, d = 2, N = 20, tmax =            1000, vmax = 5.
     -  Running the simulation with iteration time t until it reaches tmax.
     -  Monitoring and collecting necessary data during the simulation run.
 
       **D.  Result and Discussion**
 
         **A.  Simulation Results**
+        
             -  After the system has been running for tmax, we can see how the flow                 of vehicles move on the highway and how the vehicle density                        changes over time.
             -  Calculate the density per unit time of vehicles in the interval                     [x80, x90], where x80 and x90 are the specified interval                           boundaries.
             -  Calculate the maximum density per unit time of vehicles in each
