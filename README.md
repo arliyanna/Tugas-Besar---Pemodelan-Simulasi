@@ -4,10 +4,10 @@
    
    The government has a plan to build a highway congestion detection system that can provide information about the location of congestion points based on the density of vehicles in unit locations. For this purpose, our research team is tasked with creating a simulation system that can describe the flow of vehicles on the highway. This simulation is based on the Nagel-Schreckenberg Model, with predetermined assumptions. The main objective of this simulation is to determine the density of vehicles per unit time at certain intervals, see the results after the system runs for a certain period of time, and analyze the average time of the vehicle returning to the initial position.
 
-**2. Description of Simulation Program Methods and Algorithms
+**2. Description of Simulation Program Methods and Algorithms**
    
-  ** A. Road Section Location Selection****
-
+  **A. Road Section Location Selection
+**
    -  Use the osmnx library to select unique road section locations.
    -  Apply periodic boundary condition to keep the number of cars constant.
    -  Discretize/partition the vehicle path map into M subintervals.
@@ -24,7 +24,7 @@
       -  Update the speed and position of the vehicle according to the equation
         that has been determined.
 
-    **C.  Simulation System**
+  **  C.  Simulation System**
     
     -  Using fixed parameters: M = 100, p = 0.3, v0 = 0, d = 2, N = 20, tmax =             1000, vmax = 5.
     -  Running the simulation with iteration time t until it reaches tmax.
